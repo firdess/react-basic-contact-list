@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  background-color: lightgray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 400px;
+  margin: 30px auto;
+}
+.container h1 {
+  margin-bottom: 20px;
+}
+.container .search-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .search-area .search-input input {
+  width: 270px;
+  outline: none;
+  padding: 2px 5px;
+}
+.container .search-area .button .btn-add {
+  background-color: rgb(59, 59, 226);
+  color: white;
+}
+.container .person-list {
+  background-color: antiquewhite;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.container .person-list .list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .person-list .list-item:not(:last-child) {
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.container .person-list .list-item .button-area {
+  display: flex;
+  gap: 20px;
+}
+.container .person-list .list-item .button-area .btn-detail {
+  background-color: rgba(229, 155, 19, 0.81);
+}
+.container .person-list .list-item .button-area .btn-delete {
+  background-color: rgb(227, 54, 54);
+  color: white;
+}
+.container .modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+.container .modal-overlay .modal {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .modal-overlay .modal .title {
+  margin-bottom: 10px;
+}
+.container .modal-overlay .modal .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .modal-overlay .modal .form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
+}
+.container .modal-overlay .modal .form .form-group label {
+  flex-shrink: 0;
+  width: 55px;
+}
+.container .modal-overlay .modal .form .form-group input {
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 5px;
+  outline: none;
+}
+.container .modal-overlay .modal .form .button-submit {
+  text-align: end;
+}
+.container .modal-overlay .modal .button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container .show-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.container .detail-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+}
+.container .detail-modal .modal-content {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .detail-modal .modal-content .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container .detail-modal .modal-content h2 {
+  margin-bottom: 10px;
+}
+.container .detail-modal .modal-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .detail-open {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=styles.css.map */
